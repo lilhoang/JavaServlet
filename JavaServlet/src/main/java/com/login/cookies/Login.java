@@ -36,7 +36,7 @@ public class Login extends HttpServlet {
         if(username.equals("luongviethoang") && password.equals("123456")){
 
             Cookie cookie = new Cookie("username", username);
-            cookie.setMaxAge(30);
+            cookie.setMaxAge(5);
 
             resp.addCookie(cookie);
             resp.sendRedirect("/JavaServlet_war_exploded/welcome");
